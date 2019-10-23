@@ -16,7 +16,7 @@ import static org.springframework.test.util.AssertionErrors.assertEquals;
 public class UserServiceTest {
 
     @InjectMocks
-    UserService userService = mock(UserService.class);
+    UserService userService = new UserService();
 
     @Mock
     UserRepository userRepository = mock(UserRepository.class) ;
